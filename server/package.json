@@ -9,7 +9,10 @@
     "keywords": [],
     "author": "Learn with Sumit",
     "dependencies": {
-        "json-server": "^0.17.0",
         "nodemon": "^2.0.19"
+    },
+    "devDependencies": {
+        "json-server": "^0.17.1",
+        "json-server-auth": "^2.1.0"
     }
 }
