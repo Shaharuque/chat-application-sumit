@@ -13,7 +13,7 @@ export default function Register() {
   const [agreed, setAgreed] = useState(false);
   const [error, setError] = useState("");
 
-  //rtk query hook call for to make register request to api
+  //register rtk query hook call for to make register request to register api
   const [
     register,
     { data: registerData, isLoading, isSuccess, isError, error: responseError },
