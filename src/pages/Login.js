@@ -17,7 +17,7 @@ export default function Login() {
     { data: loginData, isLoading, isSuccess, isError, error: responseError },
   ] = useLoginMutation();
 
-  console.log(loginData, responseError?.data, isLoading);
+  //console.log(loginData, responseError?.data, isLoading);
 
   const handleSubmit = (e) => {
     e.preventDefault();

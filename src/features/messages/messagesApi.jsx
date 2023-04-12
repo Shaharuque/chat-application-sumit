@@ -15,7 +15,17 @@ export const messagaesApi = apiSlice.injectEndpoints({
         return result;
       },
     }),
+    //add message
+    addMessage: builder.mutation({
+      //current jei user login tar email ta parameter hisabey dewa lagey
+      query: (data) => ({
+        //object return
+        url: `/messages`,
+        method: "POST",
+        body: data,
+      }),
+    }),
   }),
 });
 
-export const { useGetMessagesQuery } = messagaesApi;
+export const { useGetMessagesQuery, useAddMessageMutation } = messagaesApi;

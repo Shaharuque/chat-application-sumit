@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import PrivateRoute from "./components/privateRoute/PrivateRoute";
 import PublicRoute from "./components/publicRoute/PublicRoute";
 import { useCheckAuth } from "./hooks/useCheckAuth";

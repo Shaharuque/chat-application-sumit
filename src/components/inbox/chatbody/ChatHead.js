@@ -7,7 +7,7 @@ export default function ChatHead({ message }) {
   const { user } = useSelector((state) => state.authInfo);
   const { email } = user || {};
   //now chat head a je message pathaisey tar image show korano lagbey so je user loggedin asey se holo receiver and je pathaisey shey sender aita determine kora lagbey
-  const partnerInfo = sender?.email === email ? sender : receiver;
+  const partnerInfo = sender?.email !== email ? sender : receiver;
   return (
     <div className="relative flex items-center p-3 border-b border-gray-300">
       <img
